@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+</head>
+<body>
+    <h1>Level 2: 50 alertboxxes</h1>
+<marquee scrollamount="5" direction="left"><h1> oh hello there... you need the link to the next level, do you... ok, click <a href="alert_fail.html">here</a> to get there...........................................................................................................ok... you can click the link now............................................................................................. fine <a href="chase.html">here</a></h1></marquee>
+</body>
+<script>
+    window.onload = function() {
+        for (let i = 0; i < 100; i++) {
+            alert(`click me ${50 - i} more Times!`);
+        }
+    }
+        setTimeout(function() {
+        window.location.href = "time_limit.html";
+        }, 75000);
+</script>
+</html>
